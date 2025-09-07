@@ -28,6 +28,7 @@ public class Game {
 
 	// @Id marca este atributo como a chave primária (Primary Key) da tabela.
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	// @GeneratedValue configura a estratégia de geração da chave primária.
 	// GenerationType.IDENTITY indica que o próprio banco de dados será responsável por gerar o valor (ex: auto-incremento).
 	private long id;

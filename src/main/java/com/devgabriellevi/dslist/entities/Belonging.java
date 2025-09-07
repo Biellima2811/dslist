@@ -1,18 +1,59 @@
 package com.devgabriellevi.dslist.entities;
 
-// IMPORTANTE: Esta classe representa a tabela de junção (join table)
-// que resolve a relação de muitos-para-muitos entre Game e GameList.
-// Ela precisaria da anotação @Entity para ser uma entidade do banco de dados.
-// Ex: @Entity @Table(name = "tb_belonging")
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+import java.util.Objects;
+
+@Entity
+@Table(name = "tb_belonging")
 public class Belonging {
 
 	// A chave primária desta entidade é a classe embutida (embedded) BelongingPK.
 	// Ela precisaria da anotação @EmbeddedId para funcionar.
+	@EmbeddedId
 	private BelongingPK id = new BelongingPK();
 	
 	// Além da chave composta, a tabela de junção pode ter outros dados,
 	// como a posição do jogo naquela lista específica.
 	private Integer position;
 	
-	// Faltariam os construtores, getters e setters para a classe funcionar completamente.
+	public Belonging() {
+	}
+
+	public Belonging(Game game, GameList list, Integer position) {
+		id.setGame(game);
+		id.setList(list);
+		this.position = position;
+	}
+
+	public BelongingPK getId() {
+		return id;
+	}
+
+	public void setId(BelongingPK id) {
+		this.id = id;
+	}
+
+	public Integer getPosition() {
+		return position;
+	}
+
+	public void setPosition(Integer position) {
+		this.position = position;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Belonging belonging = (Belonging) o;
+		return id.equals(belonging.id);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 }

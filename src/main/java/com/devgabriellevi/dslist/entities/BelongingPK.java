@@ -31,8 +31,19 @@ public class BelongingPK {
 		this.game = game;
 		this.list = list;
 	}
+	public Game getGame() {
+		return game;
+	}
+	public void setGame(Game game) {
+		this.game = game;
+	}
+	public GameList getList() {
+		return list;
+	}
+	public void setList(GameList list) {
+		this.list = list;
+	}
 
-	// Getters e setters ...
 
 	// hashCode e equals são baseados em ambos os objetos (game e list),
 	// pois juntos eles formam a chave única.
