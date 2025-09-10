@@ -44,9 +44,6 @@ public class BelongingPK {
 		this.list = list;
 	}
 
-
-	// hashCode e equals são baseados em ambos os objetos (game e list),
-	// pois juntos eles formam a chave única.
 	@Override
 	public int hashCode() {
 		return Objects.hash(game, list);
@@ -54,10 +51,18 @@ public class BelongingPK {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) return true;
-		if (obj == null) return false;
-		if (getClass() != obj.getClass()) return false;
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
 		BelongingPK other = (BelongingPK) obj;
 		return Objects.equals(game, other.game) && Objects.equals(list, other.list);
 	}
+
+
+	// hashCode e equals são baseados em ambos os objetos (game e list),
+	// pois juntos eles formam a chave única.
+	
 }

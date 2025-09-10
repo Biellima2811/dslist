@@ -1,0 +1,98 @@
+#quick-start-container {
+color: #ebebeb;
+background-color: #262626;
+}
+
+#quick-start-feature-card {
+color: #ebebeb;
+background-color: #262626;
+}
+
+#quick-start-feature-card-selected {
+color: #ebebeb;
+background-color: #3d3d3d;
+}
+
+#quick-start-continue-button {
+color: #ffffff;
+background-color: #0066b4;
+}
+
+#not-supported-referenced-file-name {
+color: #975508;
+background-color: #262626;
+}
+
+#normal-referenced-file-name {
+color: #a8a8a8;
+background-color: #262626;
+}
+
+#chat-top-banner,
+#chat-top-banner * {
+color: #a3a3a3;
+background-color: #1a1a1a;
+}
+
+#chat-container > BeforeLoginWelcomeViewer .btn-primary {
+color: #ffffff;
+background-color: #3584f1;
+}
+
+#chat-container,
+#chat-container > LoadingViewer,
+#chat-container > LoadingViewer *,
+#chat-container > BeforeLoginWelcomeViewer,
+#chat-container > BeforeLoginWelcomeViewer *,
+#chat-content-wrapper,
+#chat-content-wrapper > AfterLoginWelcomeViewer,
+#chat-content-wrapper > AfterLoginWelcomeViewer *,
+#chat-content-wrapper > AgentModeViewer,
+#chat-content-wrapper  > AgentModeViewer *{
+color: #e0e0e0;
+background-color: #1a1a1a;
+}
+
+#chat-action-bar-wrapper {
+background-color: #1a1a1a;
+}
+
+#chat-action-bar CurrentReferencedFile > Label.text-secondary {
+color: #a3a3a3;
+}
+
+#chat-action-bar,
+#chat-action-bar * {
+color: #e0e0e0;
+background-color: #3d3d3d;
+}
+
+#chat-content-viewer .btn-primary {
+color: #ffffff;
+background-color: #3584f1;
+}
+
+#chat-content-viewer > Composite > CopilotTurnWidget > InvokeToolConfirmationDialog > .bg-command-panel {
+background-color: #3d3d3d;
+}
+
+#chat-content-viewer > Composite > CopilotTurnWidget > AgentStatusLabel > .text-secondary {
+color: #a3a3a3;
+}
+
+#chat-content-viewer > Composite > CopilotTurnWidget > AgentToolCancelLabel > Label.text-secondary {
+color: #a3a3a3;
+}
+
+#chat-content-viewer,
+#chat-content-viewer > Composite,
+#chat-content-viewer > Composite * {
+color: #e0e0e0;
+background-color: #1a1a1a;
+}
+
+#chat-content-viewer > Composite > UserTurnWidget,
+#chat-content-viewer > Composite > UserTurnWidget * {
+color: #e0e0e0;
+background-color: #212121;
+}
