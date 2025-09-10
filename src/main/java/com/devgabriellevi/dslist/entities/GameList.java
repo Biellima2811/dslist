@@ -1,8 +1,12 @@
 package com.devgabriellevi.dslist.entities;
 
-import jakarta.persistence.*;
-
 import java.util.Objects;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 // IMPORTANTE: Para que esta classe se torne uma entidade do banco de dados,
 // ela precisa das anotações @Entity e @Table, assim como a classe Game.
 // Ex: @Entity @Table(name = "tb_game_list")
